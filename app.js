@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const env = process.env;
-const teacherRouter = require('./routes/teacherRoutes');
+const teacherRouter = require('./src/routes/teacherRoutes');
 
 
 app.use(bodyParser.json());

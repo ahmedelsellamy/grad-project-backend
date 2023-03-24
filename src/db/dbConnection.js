@@ -3,16 +3,7 @@ const dbConfig = require('./dbConfig');
 require('dotenv').config();
 const env  = process.env;
 
-// Create new connection pool
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'admin',
-  database: 'graduation_project',
-  port: 3306
-});
-
-// const pool = mysql.createPool("mysql://root:admin@localhost:3306/graduation_project");
+const pool = mysql.createPool(dbConfig)
 
 // Database query method
 exports.dbQuery = async (queryText, queryParams) => {
