@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-const dbConfig = require('./dbConfig');
+const dbConfig = require('../config/dbConfig');
 require('dotenv').config();
 const env  = process.env;
 
